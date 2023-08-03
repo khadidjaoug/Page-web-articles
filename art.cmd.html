@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commande</title>
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+    <header>
+        <img src="public/img/logo.svg" alt="">
+        <h1>Page de commande</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="art_acceuil.html">Acceuil</a></li>  
+            <li><a href="art_detail.html">Detail</a></li>  
+            <li><a href="art_liste.html">Liste</a></li>  
+            <li><a href="contact.html">contact</a></li>  
+            </ul>
+    </nav>
+
+    <div class="content ">
+        <form  action="contact_traitement.php"  method="post">
+               
+            <div class="formcontainer">
+                <label for=""><strong>Nom Complet</strong></label>
+                <input type="text" placeholder="Nom complet" name="nom complet">
+               
+               <label for=""><strong>Telephone</strong></label>
+               <input type="tel" placeholder="Telephone" name="tel">
+               
+                <label for=""><strong>Email</strong></label>
+                <input type="email" placeholder="Email" name="mail">
+
+                <label for=""><strong>Adresse</strong></label>
+               <input type="text" placeholder="Adresse" name="adresse">
+
+                </div>
+
+            </form>
+
+        <div class="row_space_between">
+            <div class="command_content">
+                
+                <img src="public/img/art2.jpg" alt="">
+               
+                    <p>Article 1<input type="checkbox"></p>
+                    <p>
+                        <label for="Quantité">Quantité</label>
+                        <select name="Quantité" id="Quantité">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                
+                </div>
+           
+                <div class="command_content">
+                    <img src="public/img/art3.jpg" alt="">
+                       <p>Article 2<input type="checkbox"></p> 
+                        <p>
+                            <label for="Quantité">Quantité</label>
+                            <select name="Quantité" id="Quantité">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                    </div>
+
+                </div>
+                    <input  class="button" type="submit" value="Acheter">
+    </div>
+
+
+    <footer>
+        <p>Développé par Khadidja</p>
+    </footer>
+
+
+</body>
+</html>

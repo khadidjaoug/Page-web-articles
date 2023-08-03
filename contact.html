@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+
+    <header>
+        <img src="public/img/logo.svg" alt="">
+        <h1>Page de contact</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="acceuil.html">Acceuil</a></li>  
+            <li><a href="art_liste.html">Listes</a></li>  
+            <li><a href="art_cmd.html">Commande</a></li>  
+            <li><a href="art_detail.html">Detail</a></li>   
+        </ul>
+    </nav>
+
+
+<div class="content">
+
+    <h2>Formulaire du contact</h2>
+
+<form  action="contact_traitement.php"  method="post">
+       
+    <div class="formcontainer">
+       <label for=""><strong>Nom</strong></label>
+       <input type="text" placeholder="Nom" name="nom">
+        
+       <label for=""><strong>Prenom</strong></label>
+       <input type="text" placeholder="Prenom" name="prenom">
+       
+       <label for=""><strong>Telephone</strong></label>
+       <input type="tel" placeholder="Telephone" name="tel">
+       
+        <label for=""><strong>Email</strong></label>
+        <input type="email" placeholder="Email" name="mail">
+    
+       
+        <p><strong>vous êtes:</strong> 
+        <input type="radio" name="sexe" value="femme" id="femme" >
+        <label for="femme">Une femme</label>
+        <input type="radio" name="sexe" value="homme" id="homme">
+        <label for="homme">Un homme</label>
+        </p>
+    
+        <label for="montext"><strong>Commentaire</strong></label>
+        <textarea name="montext" id="montext" placeholder=".............." ></textarea>
+    
+        <input  class="button" type="submit" value="Envoyer">
+
+       </div>
+
+     </form>
+      
+    </div>
+
+     <footer>
+        <p>Développé par Khadidja</p>
+    </footer>
+</body>
+</html>
